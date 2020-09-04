@@ -4,6 +4,7 @@
 #include <stack>
 #include <memory>
 #include <string.h>
+#include <climits>
 
 using namespace std;
 
@@ -31,8 +32,6 @@ struct  ENode {
         return this->weight > rhs.weight;
     }
 };
-
-const int INT_MAX = 0x7fff;
 
 template <typename T>
 class Graph {
